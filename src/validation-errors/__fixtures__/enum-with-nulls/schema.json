@@ -2,11 +2,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "enum": [
-        "foo",
-        "bar",
-				null
-      ]
+      "enum": ["foo", "bar", null]
     }
   }
 }

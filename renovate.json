@@ -1,17 +1,10 @@
 {
-  "extends": [
-    "config:recommended"
-  ],
+  "extends": ["config:recommended"],
   "rangeStrategy": "replace",
   "packageRules": [
     {
-      "matchPackageNames": [
-        "leven",
-        "node"
-      ],
-      "matchUpdateTypes": [
-        "major"
-      ],
+      "matchPackageNames": ["leven", "node"],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     }
   ]

@@ -18,6 +18,7 @@ npm i better-ajv-errors
 ```
 
 ### Atlassian internal
+
 ```bash
 npm i @atlassian/better-ajv-errors
 ```

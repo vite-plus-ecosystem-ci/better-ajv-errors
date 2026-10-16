@@ -1,11 +1,9 @@
-import { test, expectTypeOf } from 'vite-plus/test'
+import { test, expectTypeOf } from 'vite-plus/test';
 import betterAjvErrors, { type IOutputError } from 'better-ajv-errors';
 
 test('types', () => {
   expectTypeOf<string>(betterAjvErrors(true, false, []));
   expectTypeOf<string>(betterAjvErrors(true, false, [], { format: 'cli' }));
 
-  expectTypeOf<Array<IOutputError>>(
-    betterAjvErrors('abc', 'xyz', [], { format: 'js' })
-  );
+  expectTypeOf<Array<IOutputError>>(betterAjvErrors('abc', 'xyz', [], { format: 'js' }));
 });
