@@ -37,8 +37,10 @@ jobs:
       - name: Run Tests
         run: pnpm run test-ci
 
+      # Ecosystem-ci smoke test: Codecov rejects the tokenless upload from the fork
+      # ("Token required"), and the upload does not exercise the pinned Vite+.
       - name: Upload coverage to Codecov
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '22.x' && github.repository_owner != 'vite-plus-ecosystem-ci'
         uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
