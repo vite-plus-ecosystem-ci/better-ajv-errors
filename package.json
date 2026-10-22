@@ -71,7 +71,8 @@
     "jest-fixtures": "^0.6.0",
     "publint": "^0.3.25",
     "svg-term-cli": "^2.1.1",
-    "vite-plus": "catalog:"
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   },
   "peerDependencies": {
     "ajv": "4.11.8 - 8"

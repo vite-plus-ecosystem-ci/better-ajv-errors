@@ -11,13 +11,13 @@ overrides:
   semver@<5.7.2: '>=5.7.2'
   semver@>=7.0.0 <7.5.2: '>=7.5.2'
   trim-newlines@<3.0.1: '>=3.0.1'
-  "@xmldom/xmldom": '0.9.12'
+  '@xmldom/xmldom': '0.9.12'
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.3.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
   vitest: 5.0.5
-  vite-plus: 1.3.0
+  vite-plus: 0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
   '@vitest/coverage-v8': 5.0.5
   '@vitest/ui': 5.0.5
 peerDependencyRules:
@@ -31,3 +31,21 @@ versioning:
   changelog:
     # Keeps `CHANGELOG.md` in the repository, where the Release workflow reads the release notes.
     storage: repository
+minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
+  - '@oxc-project/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - vitest
+  - '@vitest/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
