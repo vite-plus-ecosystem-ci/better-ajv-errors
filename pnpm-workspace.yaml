@@ -11,15 +11,15 @@ overrides:
   semver@<5.7.2: '>=5.7.2'
   semver@>=7.0.0 <7.5.2: '>=7.5.2'
   trim-newlines@<3.0.1: '>=3.0.1'
-  "@xmldom/xmldom": '0.9.12'
+  '@xmldom/xmldom': '0.9.12'
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
-  vitest: 5.0.5
-  vite-plus: 1.4.0
-  '@vitest/coverage-v8': 5.0.5
-  '@vitest/ui': 5.0.5
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.b310e71f11353a85781d2d0e0e0bfe149e0f55a2
+  vitest: 5.1.0
+  vite-plus: 0.0.0-commit.b310e71f11353a85781d2d0e0e0bfe149e0f55a2
+  '@vitest/coverage-v8': 5.1.0
+  '@vitest/ui': 5.1.0
 peerDependencyRules:
   allowAny:
     - vite
